@@ -1,56 +1,64 @@
 <div class="main">
   <h1>{{ title }}</h1>
   <div [formGroup]="filterForm" class="form">
-    <label for="filterInput">Filter by Name:</label>
-    <input
-      id="filterInput"
-      formControlName="filterValue"
-      (input)="onFilterChange()"
-    />
+    <div>
+      <label for="filterInput">Filter by Name:</label>
+      <input
+        id="filterInput"
+        formControlName="filterValue"
+        (input)="onFilterChange()"
+      />
+    </div>
 
-    <label for="genderSelect">Gender:</label>
-    <select
-      id="genderSelect"
-      formControlName="gender"
-      (change)="onFilterChange()"
-    >
-      <option value="">All</option>
-      <option value="Male">Male</option>
-      <option value="Female">Female</option>
-    </select>
+    <div>
+      <label for="genderSelect">Gender:</label>
+      <select
+        id="genderSelect"
+        formControlName="gender"
+        (change)="onFilterChange()"
+      >
+        <option value="">All</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
 
-    <label for="domainSelect">Domain:</label>
-    <select
-      id="domain"
-      formControlName="domain"
-      (change)="onFilterChange()"
-    >
-      <option value="">All</option>
-      <option value="Sales">Sales</option>
-      <option value="IT">IT</option>
-      <option value="Business Development">Business Development</option>
-      <option value="Marketing">Marketing</option>
-      <option value="Finance">Finance</option>
+    <div>
+      <label for="domainSelect">Domain:</label>
+      <select
+        id="domain"
+        formControlName="domain"
+        (change)="onFilterChange()"
+      >
+        <option value="">All</option>
+        <option value="Sales">Sales</option>
+        <option value="IT">IT</option>
+        <option value="Business Development">Business Development</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Finance">Finance</option>
       
-    </select>
+      </select>
+    </div>
 
-    <label for="genderSelect">Available:</label>
-    <select
-      id="available"
-      formControlName="available"
-      (change)="onFilterChange()"
-    >
-      <option value="">All</option>
-      <option value="true">True</option>
-      <option value="false">False</option>
-    </select>
+    <div>
+      <label for="genderSelect">Available:</label>
+      <select
+        id="available"
+        formControlName="available"
+        (change)="onFilterChange()"
+      >
+        <option value="">All</option>
+        <option value="true">True</option>
+        <option value="false">False</option>
+      </select>
+    </div>
 
     <app-pagination
       [currentPage]="currentPage"
       [totalPages]="getTotalPages()"
       (pageChange)="onPageChange($event)"
     ></app-pagination>
-    <button mat-button (click)="openDialog()">View Teams</button>
+    <button mat-button (click)="openDialog()" class="view">View Teams</button>
   </div>
 
   <div class="dashboard">
