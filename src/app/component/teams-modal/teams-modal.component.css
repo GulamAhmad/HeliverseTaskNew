@@ -1,0 +1,26 @@
+.card{
+    width:250px;
+    height:290px;
+    border: 1px solid #ccc;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.card .name{
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 0 ;
+    width:100%;
+    background-color:rgb(115, 103, 228);
+    color:white;
+    text-transform: capitalize;
+}
+
+.card .name img{
+    border-radius:50%;
+    margin: 0 10px;
+    background-color:white;
+}
+.card .details{
+    padding: 20px;
+}

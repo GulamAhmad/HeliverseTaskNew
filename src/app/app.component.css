@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+
+.main {
+  font-family: "Poppins", sans-serif;
+}
+
+.main h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 2.5rem;
+  margin-left: 4rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.form input {
+  border: none;
+  border-bottom: 1px solid;
+  outline:none;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 400;
+}
+
+.card {
+  width: 250px;
+  height: 320px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .name {
+  display: flex;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+  padding: 5px 0;
+  width: 100%;
+  background-color: rgb(115, 103, 228);
+  color: white;
+  text-transform: capitalize;
+}
+
+.card .name img {
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: white;
+}
+.card .details {
+  padding: 20px;
+}
+
+.card .add-btn{
+  width:70px;
+  padding:10px;
+  margin-bottom: 10px;
+  background-color:rgb(115, 103, 228);
+  border:none;
+  color:#fff;
+  border-radius:5px;
+}
+.card .add-btn[disabled]{
+  opacity: 0.5;
+}
+
